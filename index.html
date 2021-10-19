@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animated Portfolio Homepage With DarkMode Toggle - ramCoder</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="boxes">
@@ -20,24 +28,74 @@
       <div></div>
     </div>
     <nav>
+      <div class="burger-div">
+        <i class="fas fa-bars burger"></i>
+      </div>
       <div class="logo">John</div>
       <div class="links">
         <ul>
-          <li class="home-link">Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <a href="#home">
+            <li class="home-link nav-link">Home</li>
+          </a>
+          <a href="#about">
+            <li class="nav-link">About</li>
+          </a>
+          <li class="nav-link">Services</li>
+          <li class="nav-link">Contact</li>
         </ul>
-        <input type="checkbox" name="" id="themeswitch" class="checkbox" />
       </div>
+      <input type="checkbox" name="" id="themeswitch" class="checkbox" />
     </nav>
-    <section class="home">
+    <section class="home" id="home">
       <div class="content">
         <h2>Explore the programming beauty!</h2>
-        <p>with <span>John Doe</span></p>
+        <p>with <span class="name">John Doe</span></p>
         <button class="contact-btn">Contact</button>
       </div>
-      <div class="image"><img src="./profile.png" alt="" /></div>
+      <div class="image"><img src="./profile.png" /></div>
+    </section>
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <div class="abt-content">
+        <div class="abt-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
+          aliquam deleniti laboriosam numquam voluptate aut eligendi? Suscipit
+          molestiae autem eum a similique aliquam expedita deleniti eius
+          voluptatum. Reiciendis, voluptatibus ex.
+        </div>
+        <div class="abt-languages">
+          <div class="language">
+            <i class="fab fa-html5"></i>
+            <p>HTML 5</p>
+          </div>
+          <div class="language">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS 3</p>
+          </div>
+          <div class="language">
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="language">
+            <i class="fab fa-react"></i>
+            <p>React.js</p>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
     </section>
     <script src="./script.js"></script>
   </body>
